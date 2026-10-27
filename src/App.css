@@ -183,6 +183,93 @@
   }
 }
 
+/*/* Color variants */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+}
+.variant-default {
+  background-color: #edeeee;
+  color: #79797a;
+}
+.variant-primary {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.variant-secondary {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.variant-success {
+  background-color: #ecfdf5;
+  color: #047857;
+}
+
+.variant-success .title {
+  color: #065f46;
+}
+
+.variant-danger {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.variant-danger .title {
+  color: #92400e;
+}
+
+.variant-warning {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.variant-info {
+  background-color: #cffafe;
+  color: #155e75;
+}
+
+.variant-info .title {
+  color: #92400e;
+}
+
+.variant-light {
+  background-color: #f9fafb;
+  color: #374151;
+}
+
+.variant-dark {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+.variant-purple {
+  background-color: #ede9fe;
+  color: #6d28d9;
+}
+
+.variant-pink {
+  background-color: #fce7f3;
+  color: #be185d;
+}
+
+.variant-neutral {
+  background-color: #eff6ff;
+  color: #1e40af;
+}
+
+.variant-neutral .title {
+  color: #1e40af;
+}
+
+*/
+
 /*Badge*/
 
 .badge {
@@ -213,61 +300,90 @@
   border-radius: 999px;
 }
 
-/* Color variants */
-.badge-primary {
-  background-color: #dbeafe;
-  color: #1d4ed8;
-}
-
-.badge-secondary {
-  background-color: #f3f4f6;
-  color: #1f2937;
-}
-
-.badge-success {
-  background-color: #d1fae5;
-  color: #065f46;
-}
-
-.badge-danger {
-  background-color: #fee2e2;
-  color: #b91c1c;
-}
-
-.badge-warning {
-  background-color: #fef3c7;
-  color: #92400e;
-}
-
-.badge-info {
-  background-color: #cffafe;
-  color: #155e75;
-}
-
-.badge-light {
-  background-color: #f9fafb;
-  color: #374151;
-}
-
-.badge-dark {
-  background-color: #374151;
-  color: #f9fafb;
-}
-
-.badge-purple {
-  background-color: #ede9fe;
-  color: #6d28d9;
-}
-
-.badge-pink {
-  background-color: #fce7f3;
-  color: #be185d;
-}
-
 .shape-square {
   border-radius: 7px;
 }
 
 .shape-pill {
   border-radius: 999px;
+}
+
+/* Extra small */
+.badge-xs {
+  font-size: 10px;
+  line-height: 14px;
+  padding: 1px 6px;
+  min-height: 18px;
+}
+
+/* Small */
+.badge-sm {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 2px 8px;
+  min-height: 22px;
+}
+
+/* Medium - default */
+.badge-md {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 4px 12px;
+  min-height: 28px;
+}
+
+/* Large */
+.badge-lg {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 14px;
+  min-height: 36px;
+}
+
+/*Banners*/
+
+.banner {
+  text-align: left;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 1.5;
+
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 20px;
+  letter-spacing: 0%;
+  width: 100%;
+  max-width: 600px;
+} /*default*/
+
+.title {
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.default .icon {
+  background-color: red;
+  color: #fff;
 }
