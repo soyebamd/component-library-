@@ -3,7 +3,8 @@ import heroImg from "./assets/hero.png";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import Badge from "./badges/badge";
-import Banner from "./banners/banner";
+import Banner from "./banners/index";
+
 import "./App.css";
 
 function App() {
@@ -45,39 +46,37 @@ function App() {
           <h1>Banners</h1>
         </section>
 
-        <Banner title="Congratulations!">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          pariatur, ipsum similique veniam.
+        <Banner variant="success">
+          <Banner.Title>Congratulations!</Banner.Title>
+          <Banner.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            pariatur, ipsum similique veniam.
+          </Banner.Text>
         </Banner>
 
-        <Banner
-          title="There is a problem with your application!!"
-          variant="danger"
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          pariatur, ipsum similique veniam.
+        <Banner variant="warning">
+          <Banner.Title>Attention!</Banner.Title>
+          <Banner.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            pariatur, ipsum similique veniam.
+          </Banner.Text>
         </Banner>
 
-        <Banner title="Attention!" variant="warning">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          pariatur, ipsum similique veniam.
+        <Banner variant="neutral">
+          <Banner.Title>Update available!</Banner.Title>
+          <Banner.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            pariatur, ipsum similique veniam.
+          </Banner.Text>
         </Banner>
 
-        <Banner title="Update available!" variant="neutral">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          pariatur, ipsum similique veniam.
+        <Banner variant="danger">
+          <Banner.Title>There is a problem with your application!</Banner.Title>
+          <Banner.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            pariatur, ipsum similique veniam.
+          </Banner.Text>
         </Banner>
-
-        <Banner title="Congratulations!"></Banner>
-
-        <Banner title="Attention!" variant="danger"></Banner>
-
-        <Banner
-          title="There is a problem with your application!"
-          variant="warning"
-        ></Banner>
-
-        <Banner title="Update available!" variant="neutral"></Banner>
       </section>
 
       <section id="spacer"></section>

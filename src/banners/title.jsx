@@ -1,3 +1,3 @@
-export default function BannerTitle({ title }) {
-  return { title };
+export default function BannerTitle({ children }) {
+  return <h2 className="title">{children}</h2>;
 }
