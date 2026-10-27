@@ -4,6 +4,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import Badge from "./badges/badge";
 import Banner from "./banners/index";
+import Card from "./cards/index";
 
 import "./App.css";
 
@@ -40,7 +41,6 @@ function App() {
           Badge purple
         </Badge>
       </section>
-
       <section id="center" style={{ marginBottom: "50px" }}>
         <section id="spacer">
           <h1>Banners</h1>
@@ -52,6 +52,10 @@ function App() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             pariatur, ipsum similique veniam.
           </Banner.Text>
+        </Banner>
+
+        <Banner variant="success">
+          <Banner.Title>Congratulations!</Banner.Title>
         </Banner>
 
         <Banner variant="warning">
@@ -78,7 +82,33 @@ function App() {
           </Banner.Text>
         </Banner>
       </section>
+      <section id="spacer"></section>
 
+      <section id="center" style={{ marginBottom: "50px" }}>
+        <Card variant="success">
+          <Card.Title>Easy Deployment</Card.Title>
+          <Card.Text>
+            Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
+            magna sit morbi lobortis.
+          </Card.Text>
+        </Card>
+
+        <Card>
+          <Card.Title>Easy Deployment</Card.Title>
+          <Card.Text>
+            Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
+            magna sit morbi lobortis.
+          </Card.Text>
+        </Card>
+
+        <Card variant="danger">
+          <Card.Title>Easy Deployment</Card.Title>
+          <Card.Text>
+            Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
+            magna sit morbi lobortis.
+          </Card.Text>
+        </Card>
+      </section>
       <section id="spacer"></section>
     </>
   );
